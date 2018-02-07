@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
 from . import helpers
+import sys
+from PyQt4 import QtGui, QtCore
 
-def get_hmm():
-    """Get a thought."""
-    return 'hmmm...'
+from PIL import Image, ImageTk
 
-
-def hmm():
-    """Contemplation..."""
-    if helpers.get_answer():
-        print(get_hmm())
+def qt_gui(audio, omr, png):
+    app = QtGui.QApplication(sys.argv)
+    form = helpers.SheetGui(audio,omr,png)
+    form.show()
+    app.exec_()
+    

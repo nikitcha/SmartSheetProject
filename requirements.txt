@@ -1,2 +1,9 @@
 nose
 sphinx
+kivy
+sounddevice
+matplotlib
+scipy
+numpy
+librosa
+pretty_midi
